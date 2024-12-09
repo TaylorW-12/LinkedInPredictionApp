@@ -66,15 +66,16 @@ parent = st.selectbox(
 par = parent_mapping[parent]
 
 education_mapping = {
-    "Less than high school":1,
-    "High school incomplete":2,
-    "Some college, no degree": 3,
-    "Two-year associate degree": 4,
-    "Four-year bachelor's degree": 5,
+   "Less than high school (Grades 1-8 or no formal schooling)":1,
+    "High school incomplete (Grades 9-11 or Grade 12 with NO diploma)":2,
+    "High school graduate (Grade 12 with diploma or GED certificate)":3,
+    "Some college, no degree": 4,
+    "Two-year associate degree": 5,
+    "Four-year bachelor's degree": 6,
     "Some postgraduate":7,
     "Postgraduate or professional degree": 8,
     "Don't know":  98,
-    "Refused":99,
+    "Refused":99
 }
 # Get user input
 education = st.selectbox(
